@@ -270,5 +270,8 @@ WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WIFI_DRIVER_OPERSTATE_PATH := "/sys/class/net/wlan0/operstate"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
-# Inherit the proprietary files
+# Use mke2fs to create ext4 images
+TARGET_USES_MKE2FS := true
+
+# Inherit from proprietary files
 -include vendor/xiaomi/whyred/BoardConfigVendor.mk
