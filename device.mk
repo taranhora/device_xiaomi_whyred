@@ -356,7 +356,8 @@ PRODUCT_PACKAGES += \
     init.msm.usb.configfs.rc \
     init.target.rc \
     ueventd.qcom.rc \
-    init.goodix.sh
+    init.goodix.sh \
+    init.safailnet.rc
 
 PRODUCT_PACKAGES += \
 	init.class_main.sh \
