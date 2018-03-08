@@ -358,7 +358,8 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.msm.usb.configfs.rc \
     init.target.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    init.goodix.sh
 
 PRODUCT_PACKAGES += \
 	init.class_main.sh \
