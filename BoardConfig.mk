@@ -160,6 +160,9 @@ VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
 # Extended Filesystem Support
 TARGET_EXFAT_DRIVER := sdfat
 
+# Encryption
+TARGET_HW_DISK_ENCRYPTION := true
+
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
