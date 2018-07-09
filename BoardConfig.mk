@@ -158,7 +158,7 @@ SF_VSYNC_EVENT_PHASE_OFFSET_NS := 6000000
 VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
 
 # Extended Filesystem Support
-TARGET_EXFAT_DRIVER := exfat
+TARGET_EXFAT_DRIVER := sdfat
 
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
