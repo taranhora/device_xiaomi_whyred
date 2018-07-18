@@ -1,2 +1,5 @@
 #lcd density
 ro.sf.lcd_density=480
+
+#rom version
+ro.xtended.version=x9-OFFICIAL

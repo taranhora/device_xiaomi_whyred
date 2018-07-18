@@ -1,1 +1,1 @@
-add_lunch_combo bootleg_whyred-userdebug
+add_lunch_combo xtended_whyred-userdebug
