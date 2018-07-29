@@ -3,3 +3,7 @@ ro.sf.lcd_density=480
 
 #rom version
 ro.xtended.version=x9.5-OFFICIAL
+
+#Camera esi
+persist.camera.eis.enable=1
+
