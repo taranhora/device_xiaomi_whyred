@@ -146,8 +146,7 @@ PRODUCT_PACKAGES += \
     libbt-vendor
 	
 # Camera
-PRODUCT_PACKAGES += \
-	Snap
+$(call inherit-product, vendor/xiaomi/MiuiCamera/config.mk)
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
