@@ -146,7 +146,8 @@ persist.hwc.enable_vds=1 \
 persist.debug.wfd.enable=1 \
 persist.sys.wfd.virtual=0 \
 ro.opengles.version=196610 \
-vendor.display.enable_default_color_mode=0
+vendor.display.enable_default_color_mode=0 \
+debug.sf.enable_hwc_vds=1
 
 # HWUI
 PRODUCT_PROPERTY_OVERRIDES += \
