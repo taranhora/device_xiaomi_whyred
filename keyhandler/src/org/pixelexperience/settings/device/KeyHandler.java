@@ -33,7 +33,7 @@ public class KeyHandler implements DeviceKeyHandler {
         resolver = context.getContentResolver();
     }
 
-    public boolean handleKeyEvent(KeyEvent event) {
+    public KeyEvent handleKeyEvent(KeyEvent event) {
         String deviceName = "";
         int keyCode = event.getKeyCode();
         int scanCode = event.getScanCode();
@@ -48,17 +48,17 @@ public class KeyHandler implements DeviceKeyHandler {
 
         if (keyCode == FP_KEYCODE && scanCode == FP_SCANCODE && ArrayUtils.contains(FP_EVENTS, deviceName)){
             if (action != KeyEvent.ACTION_DOWN) {
-                return false;
+                return null;
             }
             ActivityInfo runningActivity = getRunningActivityInfo();
             if (runningActivity != null && ArrayUtils.contains(ALLOWED_CAMERA_PACKAGES, runningActivity.packageName)){
                 return Settings.Secure.getInt(resolver, FP_SHUTTER_PREF_KEY, 0) == 1 ? event : null;
             }else{
-                return false;
+                return null;
             }
         }
 
-        return true;
+        return event;
     }
 
     private static ActivityInfo getRunningActivityInfo() {
