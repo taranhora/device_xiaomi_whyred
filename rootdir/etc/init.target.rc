@@ -61,6 +61,8 @@ on fs
     write /sys/kernel/boot_adsp/boot 1
     chown system system /dev/goodix_fp
 
+    setprop sys.usb.ffs.aio_compat 1
+
 on post-fs
     start qseecomd
     exec - system system -- /vendor/bin/init.qti.qseecomd.sh
