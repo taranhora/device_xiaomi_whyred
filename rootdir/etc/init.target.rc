@@ -106,6 +106,9 @@ on boot
     chown system system /persist/speccfg/submask
     chown system system /persist/speccfg/partition
 
+    chmod 0664 /sys/devices/virtual/graphics/fb0/idle_time
+    chown system graphics /sys/devices/virtual/graphics/fb0/idle_time
+
     # Synaptics DSX RMI Node
     chown system system /sys/devices/soc/c175000.i2c/i2c-1/1-0020/input/input2/wake_gesture
 	
