@@ -35,7 +35,8 @@ persist.radio.NO_STAPA=1 \
 persist.radio.sw_mbn_update=0 \
 persist.radio.hw_mbn_update=0 \
 persist.radio.trigger.silence=true \
-persist.radio.VT_CAM_INTERFACE=2
+persist.radio.VT_CAM_INTERFACE=2 \
+persist.vendor.ims.dropset_feature=0
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
