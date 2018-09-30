@@ -110,9 +110,12 @@ ro.bluetooth.hfp.ver=1.6
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
+persist.camera.is_type=4 \
+persist.camera.is_mode=4 \
 camera.shutter_sound.blacklist=com.android.camera \
-camera.hal1.packagelist=com.whatsapp,com.snapchat.android,com.instagram.android \
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap \
+vendor.camera.aux.packagelist2=com.android.systemui \
+camera.hal1.packagelist=com.whatsapp,com.snapchat.android,com.instagram.android,com.skype.raider,com.google.android.talk,com.facebook.katana \
+vendor.camera.aux.packagelist=com.google.android.GoogleCameraWide,com.android.camera,com.google.android.GoogleCameraTele,com.bsgmod.camera \
 persist.camera.preview.ubwc=0 \
 persist.camera.stats.test=0 \
 persist.camera.depth.focus.cb=0 \
