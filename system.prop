@@ -1,2 +1,6 @@
 #lcd density
 ro.sf.lcd_density=480
+
+#rom version
+ro.xtended.version=XP-1-OFFICIAL
+
