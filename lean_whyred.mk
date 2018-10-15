@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Lean stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -21,13 +24,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from whyred device
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
-# Inherit some common Bootleggers stuff.
-$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
+# Inherit some common Lean stuff.
+$(call inherit-product, vendor/lean/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 TARGET_VENDOR := Xiaomi
 PRODUCT_DEVICE := whyred
-PRODUCT_NAME := bootleg_whyred
+PRODUCT_NAME := lean_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 BOARD_VENDOR := Xiaomi
@@ -36,8 +39,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="whyred-user 8.1.0 OPM1.171019.011 V9.5.14.0.OEIMIFA release-keys" \
-    TARGET_DEVICE="whyred" \
-    DEVICE_MAINTAINERS="Taran107 & Keerten"
+    TARGET_DEVICE="whyred"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := xiaomi/whyred/whyred:8.1.0/OPM1.171019.011/V9.5.14.0.OEIMIFA:user/release-keys
