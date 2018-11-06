@@ -1622,8 +1622,10 @@ vendor/bin/time_daemon
 vendor/lib/mediadrm/libwvdrmengine.so|56f4f50b82787d4709b82cbffe3e41a1e0e9569a
 vendor/lib64/mediadrm/libwvdrmengine.so|37c60196e0ebddf730f42e66a33a38120393fa1d
 
-# Wifi
-vendor/bin/cnss-daemon
+# Widevine - from Nokia 7+ Onyx_00WW-user-9-PPR1.180610.011
+vendor/lib64/libwvhidl.so|c43592cf9de090d74e37f438c071256c86f31f9c
+vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc|5a01d337c1d375ee24a6c8992ba91f54afb7637e
+vendor/bin/hw/android.hardware.drm@1.1-service.widevine|a18fb3b14337da6c2e5cf39984287961b90dd527
 
 # Widevine - from Nokia 7+ Onyx_00WW-user-9-PPR1.180610.011
 vendor/lib64/libwvhidl.so|c43592cf9de090d74e37f438c071256c86f31f9c
